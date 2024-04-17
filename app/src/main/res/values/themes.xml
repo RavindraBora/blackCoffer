@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BlackCoffer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BlackCoffer" parent="Base.Theme.BlackCoffer">
+        <item name="android:statusBarColor">@color/home_head</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+</resources>

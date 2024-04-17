@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">blackCoffer</string>
+    <string name="refine_head">Refine</string>
+    <string name="txt_availability">Select Your Availability</string>
+    <string name="txt_add_status">Add Your Status</string>
+    <string name="hi_community_i_am_open_to_new_connections">Hi community! I am open to new connections</string>
+    <string name="_47_250">47/250</string>
+    <string name="select_hyper_local_distance">Select Hyper local Distance</string>
+    <string name="select_purpose">Select Purpose</string>
+    <string name="save_explore"><![CDATA[Save & Explore]]></string>
+    <string name="_1_km">1 Km</string>
+    <string name="_100_km">100 Km</string>
+    <string name="matrimony">Matrimony</string>
+    <string name="dating">Dating</string>
+    <string name="friendship">Friendship</string>
+    <string name="movies">Movies</string>
+    <string name="dinning">Dinning</string>
+    <string name="coffee">Coffee</string>
+    <string name="bussiness">Bussiness</string>
+    <string name="hobbies">Hobbies</string>
+    <string-array name="dropdown_items">
+        <item>Available | Hey Let Us Connect</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search...</string>
+    <string name="percent">%</string>
+    <string name="profile_score">Profile Score - </string>
+    <string name="invite">INVITE</string>
+</resources>

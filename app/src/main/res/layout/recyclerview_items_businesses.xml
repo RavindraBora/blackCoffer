@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/recycler_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_personal"
+            android:paddingStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/RV_name"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/RV_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name"/>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/RV_location"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                app:layout_constraintStart_toEndOf="@id/location"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/ll_progress"
+                app:layout_constraintTop_toBottomOf="@id/location"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:progress="50"
+                    android:layout_height="7dp"
+                    android:progressDrawable="@drawable/rounded_corners_progress_bar" />
+
+                <TextView
+                    android:id="@+id/profile_score"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/progressBar_color"
+                    android:text="@string/profile_score"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/profile_score_percent"
+                    android:textColor="@color/progressBar_color"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                app:layout_constraintTop_toBottomOf="@id/ll_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call"/>
+
+                <ImageView
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/contacts"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/location_img"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/comm_message"
+            app:layout_constraintTop_toBottomOf="@id/cl_personal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/RV_location"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/services"
+            app:layout_constraintTop_toBottomOf="@id/comm_message"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/RV_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        android:id="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="refine_bg">#143d59</color>
+    <color name="home_head">#0e2e43</color>
+    <color name="frag_bg">#DA6EA3C5</color>
+    <color name="rv_bg">#83D2D7DA</color>
+    <color name="transparent">#00143D59</color>
+    <color name="tab_txt_color">#798995</color>
+    <color name="progressBar_color">#74858f</color>
+    <color name="RV_border">#C6C5D8E3</color>
+    <color name="RV_name">#001a25</color>
+    <color name="RV_location">#45647e</color>
+    <color name="brown">#964B00</color>
+    <color name="golden">#927335</color>
+</resources>
